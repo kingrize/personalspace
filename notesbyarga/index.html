@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tia Fatimah | Personal Space</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+  <!-- Loading screen -->
+  <div class="loader">
+    <div class="loader-circle"></div>
+  </div>
+
+  <header>
+    <div class="profile-bar">
+      <img src="https://github.com/kingrize/tiauwu/blob/main/website/cantik.jpg?raw=true" alt="Profile Photo" id="profile-img">
+      <div>
+        <strong>Arga PN</strong><br>
+        <small id="status-text">Exploring ideas 💭</small>
+        <div class="time-widget" id="clock">--:--</div>
+      </div>
+    </div>
+    <div class="header-controls">
+      <button class="icon-btn" id="notification-btn">
+        <i data-feather="bell"></i>
+        <span class="notification-dot"></span>
+      </button>
+      <button class="icon-btn" id="theme-toggle">
+        <i data-feather="moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Page -->
+  <div class="page active" id="home-page">
+    <div class="greeting-banner">
+      <h2><span id="greeting-text">Good day</span>, Tia!</h2>
+      <p>Welcome back to your personal space. What would you like to explore today?</p>
+    </div>
+    
+    <div class="main-grid">
+      <div class="card" data-navigate="thoughts">
+        <div class="card-icon">
+          <i data-feather="feather"></i>
+        </div>
+        <div class="card-title">Thoughts</div>
+      </div>
+      <div class="card" data-navigate="gallery">
+        <div class="card-icon">
+          <i data-feather="image"></i>
+        </div>
+        <div class="card-title">Gallery</div>
+      </div>
+      <div class="card" data-navigate="favorites">
+        <div class="card-icon">
+          <i data-feather="heart"></i>
+        </div>
+        <div class="card-title">Favorites</div>
+      </div>
+      <div class="card" data-navigate="calendar">
+        <div class="card-icon">
+          <i data-feather="calendar"></i>
+        </div>
+        <div class="card-title">Calendar</div>
+      </div>
+      <div class="card" data-navigate="projects">
+        <div class="card-icon">
+          <i data-feather="layers"></i>
+        </div>
+        <div class="card-title">Projects</div>
+      </div>
+      <div class="card" data-navigate="music">
+        <div class="card-icon">
+          <i data-feather="music"></i>
+        </div>
+        <div class="card-title">Music</div>
+      </div>
+    </div>
+    
+    <div class="section-container">
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title"><i data-feather="coffee" style="width: 18px;"></i> Interests</h3>
+        </div>
+        <div class="interests-grid">
+          <div class="interest-tag">UI Design</div>
+          <div class="interest-tag">Photography</div>
+          <div class="interest-tag">Travel</div>
+          <div class="interest-tag">Books</div>
+          <div class="interest-tag">Art</div>
+          <div class="interest-tag">Nature</div>
+          <div class="interest-tag">Cooking</div>
+          <div class="interest-tag">Music</div>
+        </div>
+      </div>
+      
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title"><i data-feather="award" style="width: 18px;"></i> Quote of the Day</h3>
+        </div>
+        <div class="quote-display">
+          <div class="quote-text">The future belongs to those who believe in the beauty of their dreams.</div>
+          <div class="quote-author">Eleanor Roosevelt</div>
+        </div>
+      </div>
+      
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title"><i data-feather="user" style="width: 18px;"></i> About Me</h3>
+        </div>
+        <div class="about-text">
+          <p>Hello! I'm Arga, a creative mind with a passion for design and aesthetics. I enjoy capturing beautiful moments through photography and expressing ideas through various art forms.</p>
+          <br>
+          <p>My personal space is where I organize my thoughts, projects and inspirations — a digital reflection of my journey through life and creativity.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Gallery Page -->
+  <div class="page" id="gallery-page">
+    <div class="section-header" style="padding: 20px 24px 0;">
+      <h3 class="section-title" style="font-size: 22px;"><i data-feather="image" style="width: 20px;"></i> My Gallery</h3>
+    </div>
+    
+    <div class="section-container">
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title">Recent Photos</h3>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?nature" alt="Nature">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?city" alt="City">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?portrait" alt="Portrait">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?art" alt="Art">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?coffee" alt="Coffee">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?architecture" alt="Architecture">
+          </div>
+        </div>
+      </div>
+      
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title">Travel Adventures</h3>
+        </div>
+        
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?beach" alt="Beach">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?mountain" alt="Mountain">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?forest" alt="Forest">
+          </div>
+          <div class="gallery-item">
+            <img src="https://source.unsplash.com/random/300x300?desert" alt="Desert">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Thoughts Page -->
+  <div class="page" id="thoughts-page">
+    <div class="section-header" style="padding: 20px 24px 0;">
+      <h3 class="section-title" style="font-size: 22px;"><i data-feather="feather" style="width: 20px;"></i> My Thoughts</h3>
+    </div>
+    
+    <div class="section-container">
+      <div class="section-card">
+        <div class="thoughts-list">
+          <div class="thought-item">
+            <div class="thought-icon">
+              <i data-feather="star" style="width: 20px;"></i>
+            </div>
+            <div class="thought-content">
+              <h4>The Art of Mindfulness</h4>
+              <p>Practicing mindfulness has changed my perspective on daily tasks and interactions.</p>
+              <div class="thought-date">June 15, 2023</div>
+            </div>
+          </div>
+          
+          <div class="thought-item">
+            <div class="thought-icon">
+              <i data-feather="coffee" style="width: 20px;"></i>
+            </div>
+            <div class="thought-content">
+              <h4>Coffee Shop Chronicles</h4>
+              <p>Found a hidden gem of a coffee shop today with the perfect ambiance for reading.</p>
+              <div class="thought-date">June 10, 2023</div>
+            </div>
+          </div>
+          
+          <div class="thought-item">
+            <div class="thought-icon">
+              <i data-feather="book" style="width: 20px;"></i>
+            </div>
+            <div class="thought-content">
+              <h4>Book Review: The Silent Patient</h4>
+              <p>A psychological thriller that kept me on the edge of my seat until the very end.</p>
+              <div class="thought-date">June 5, 2023</div>
+            </div>
+          </div>
+          
+          <div class="thought-item">
+            <div class="thought-icon">
+              <i data-feather="eye" style="width: 20px;"></i>
+            </div>
+            <div class="thought-content">
+              <h4>Perspective Shifts</h4>
+              <p>How changing your point of view can transform challenges into opportunities.</p>
+              <div class="thought-date">May 30, 2023</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Profile Page -->
+  <div class="page" id="profile-page">
+    <div class="profile-section">
+      <img src="https://github.com/kingrize/tiauwu/blob/main/website/cantik.jpg?raw=true" alt="Tia Fatimah" class="profile-avatar">
+      <h2 class="profile-name">Tia Fatimah</h2>
+      <p class="profile-title">Creative Explorer & Dreamer</p>
+      
+      <div class="social-links">
+        <a href="#" class="social-link">
+          <i data-feather="instagram"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i data-feather="twitter"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i data-feather="dribbble"></i>
+        </a>
+        <a href="#" class="social-link">
+          <i data-feather="linkedin"></i>
+        </a>
+      </div>
+    </div>
+    
+    <div class="section-container">
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title">Biography</h3>
+        </div>
+        <div class="about-text">
+          <p>Creative soul with a passion for design, photography, and meaningful connections. I find inspiration in everyday moments and believe in the power of storytelling through visual mediums.</p>
+          <br>
+          <p>When not exploring new creative outlets, you can find me lost in a good book or wandering through nature with my camera.</p>
+        </div>
+      </div>
+      
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title">Expertise</h3>
+        </div>
+        <div class="about-text">
+          <ul style="padding-left: 20px; line-height: 1.8;">
+            <li>Visual Storytelling</li>
+            <li>Photography</li>
+            <li>Digital Art</li>
+            <li>Creative Writing</li>
+            <li>Content Curation</li>
+            <li>Design Thinking</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="section-card">
+        <div class="section-header">
+          <h3 class="section-title">Life Philosophy</h3>
+        </div>
+        <div class="about-text">
+          <p>"Create more than you consume. Find beauty in the everyday. Stay curious and never stop learning. Balance ambition with mindfulness. Make connections that matter."</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Navigation -->
+  <nav>
+    <a href="#" class="nav-item active" data-page="home">
+      <i data-feather="home" class="nav-icon"></i>
+      <span class="nav-label">Home</span>
+    </a>
+    <a href="#" class="nav-item" data-page="gallery">
+      <i data-feather="image" class="nav-icon"></i>
+      <span class="nav-label">Gallery</span>
+    </a>
+    <a href="#" class="nav-item" data-page="thoughts">
+      <i data-feather="feather" class="nav-icon"></i>
+      <span class="nav-label">Thoughts</span>
+    </a>
+    <a href="#" class="nav-item" data-page="profile">
+      <i data-feather="user" class="nav-icon"></i>
+      <span class="nav-label">Profile</span>
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
